@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>books store</title>
+  </head>
+  <body>
+    <!-- head section -->
+    <header id="head">
+      <img class="logo-bookstore" src="./assets/bookshop.jpg" alt="bookstore" />
+      <nav id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main id="main">
+      <!-- carte items details -->
+      <div class="small-container">
+        <table>
+          <tr>
+            <th></th>
+            <th>products</th>
+            <th>quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td><i class="fa fa-heart" aria-hidden="true"></i></td>
+            <td>
+              <div class="product-info">
+                <div class="product-img">
+                  <img
+                    src="./assets/product1.jpg"
+                    alt="a carnival of Snackery"
+                  />
+                  <a href="">Remove</a>
+                </div>
+
+                <div class="info">
+                  <h3>Description</h3>
+                  <p>
+                    There’s no right way to keep a diary, but if there’s an
+                    entertaining way, David Sedaris seems to have mas­tered it.
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <button onclick="increment()">+</button>
+              <input type="number" id="numberofbook1" value="1" >
+              <button>-</button>
+            </td>
+            <td>50dt</td>
+          </tr>
+          <tr id="2nd">
+            <td><a href="#" class="heart"></a><i class="fa fa-heart" id="heart1" aria-hidden="true"></i></a></td>
+            <td>
+              <div class="product-info">
+                <div class="product-img">
+                  <img
+                    src="./assets/product2.png"
+                    alt="J.D. and the Great Barber Battle"
+                  />
+                  <button class="remove">Remove</a>
+                </div>
+
+                <div class="info">
+                  <h3>Description</h3>
+                  <p>
+                    Eight-year-old J.D. turns a tragic home haircut into a
+                    thriving barber business in this hilarious new illustrated
+                    chapter book series
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <button class="plus-button">+</button>
+              <input type="text" value="1" class="qty"/>
+              <button class="minus-button">-</button>
+            </td>
+            <td><span class="price">35</span>dt</td> 
+            <td>Total<span class="total">0</span>dt</td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-heart" aria-hidden="true"></i></td>
+            <td>
+              <div class="product-info">
+                <div class="product-img">
+                  <img
+                    src="./assets/product3.jpg"
+                    alt="Sydney and Taylor Explore the Whole Wide World"
+                  />
+                  <a href="">Remove</a>
+                </div>
+
+                <div class="info">
+                  <h3>Description</h3>
+                  <p>Sydney and Taylor Explore the Whole Wide World</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <button>+</button>
+              <input type="text" value="1" />
+              <button>-</button>
+            </td>
+            <td>40dt</td>
+          </tr>
+        </table>
+      </div>
+      <div class="totale-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td><input type="text" class="text" /></td>
+          </tr>
+          <tr>
+            <td>tax</td>
+            <td>35dt</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td><input type="text" class="text" /></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="feedback">
+        <button>ANY FEEDBACK?</button>
+      </div>
+      <div class="follow-us">
+        <h3>FIND US ON</h3>
+        <a
+          href="https://www.facebook.com/profile.php?id=100009466028375"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.instagram.com/asma_sahraoui/?hl=fr"
+          class="fa fa-instagram"
+        ></a>
+      </div>
+      <div class="copyright"><p>Copyright 2021- ASMA</p></div>
+    </footer>
+    <script src="js/test.js">
+    
+    </script>
+  </body>
+</html>
